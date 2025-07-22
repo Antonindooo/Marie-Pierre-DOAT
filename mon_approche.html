@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>MProNutri</title>
+        
+        <link rel="icon" href="icon.png" type="image/png">
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-topic-listing.css" rel="stylesheet">
+
+        <style>
+            /* AM header, faire en sorte que l'image dans le header soit tjs de la meme taille*/
+            .site-header {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('food.jpg') !important;
+                background-size: cover;
+                background-position: center top;
+                min-height: 30vh;
+                margin-top: 76px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            
+            .site-header h2 {
+                font-size: 2rem;
+                font-weight: 600;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            }
+            
+            /* Assurez-vous que la barre de navigation reste au-dessus */
+            .navbar {
+                position: fixed;
+                width: 100%;
+                top: 0;
+                z-index: 1000;
+                background-color: white !important;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+            
+        </style>
+<!--
+
+TemplateMo 590 topic listing
+
+https://templatemo.com/tm-590-topic-listing
+
+-->
+    </head>
+
+    <body class="topics-listing-page" id="top">
+
+        <main>
+            <!-- Conteneur pour le footer -->
+
+            
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                <!-- Remplacez cette partie dans la navbar de tous les fichiers HTML -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="icon.png" alt="Icon" style="width: 35px; height: auto; margin-right: 20px;">                        
+                        <div>
+                            <span>Marie-Pierre DOAT</span>
+                            <div class="subtitle-doctor">Docteur en pharmacie</div>
+                        </div>
+                    </a>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html">Accueil</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="apropos.html">À propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="mon_approche.html">Mon approche</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="contact.html">Contact</a>
+                            </li>
+
+                        </ul>
+
+                        <div class="d-none d-lg-flex align-items-center">
+                            <a href="https://www.mynutriconsult.com/fr/annuaire-des-praticiens/details-praticien/marie-pierre-doat/" class="btn custom-btn">Prendre RDV</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+<!-- Le header et la navigation restent identiques, changeons le contenu principal -->
+
+            <!-- Section Header -->
+
+            <header class="site-header d-flex flex-column justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-5 col-12">
+
+                            <h2 class="text-white">À propos de moi</h2>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+            <div class="main-scaled-content">
+            <!-- Section Biographie Innovante -->
+            <section class="bio-section py-5" id="about">
+                <div class="container">
+                    <!-- En-tête avec effet parallaxe -->
+                    <div class="bio-header text-center mb-5" data-aos="fade-up">
+                        <h1 class="display-3 fw-bold">Marie-Pierre DOAT</h1>
+                        <div class="title-underline"></div>
+                        <h5 class="subtitle mt-3">Docteur en pharmacie et diplômée de l’Institut SIIN (Scientific Institute for Intelligent Nutrition)</h5>
+                    </div>
+                    
+                    <!-- Carte principale avec effet de profondeur -->
+                    <div class="bio-card">
+                        <div class="row g-0">
+                            <!-- Colonne image avec superposition d'éléments -->
+                            <div class="col-lg-5 col-md-6 position-relative">
+                                <div class="image-wrapper">
+                                    <div class="image-background"></div>
+                                    <img src="portrait.jpg" class="portrait-image" alt="Marie-Pierre Doat - Coach en nutrition" loading="lazy">
+                                </div>
+                            </div>
+                            
+                            <!-- Colonne contenu avec onglets -->
+                            <div class="col-lg-7 col-md-6">
+                                <div class="bio-content">
+                                    <!-- Navigation par onglets -->
+                                    <ul class="nav nav-tabs bio-tabs" id="bioTabs" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="parcours-tab" data-bs-toggle="tab" data-bs-target="#parcours" type="button" role="tab" aria-selected="true">Mon Parcours</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="approche-tab" data-bs-toggle="tab" data-bs-target="#approche" type="button" role="tab" aria-selected="false">Mon Approche</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="personnel-tab" data-bs-toggle="tab" data-bs-target="#personnel" type="button" role="tab" aria-selected="false">Personnel</button>
+                                        </li>
+                                    </ul>
+                                    
+                                    <!-- Contenu des onglets -->
+                                    <div class="tab-content p-4" id="bioTabContent">
+                                        <!-- Onglet Parcours -->
+                                        <div class="tab-pane fade show active" id="parcours" role="tabpanel" aria-labelledby="parcours-tab">
+                                            <h3 class="mb-3"><i class="bi bi-mortarboard me-2"></i>Formation & Expérience</h3>
+                                            <p class="bio-text">Au cours de mes 20 premières années d'exercice officinal, j'ai pu observer l'impact de l'alimentation et du mode de vie sur l'incidence des maladies de civilisation (surpoids, problèmes cardiovasculaires, cancers…).</p>
+                                            <p class="bio-text">J'ai donc suivi la formation SIIN, organisme scientifique dirigé par des médecins, œuvrant pour une nutrition santé respectueuse de l'Homme et de la planète. J'ai ainsi pu comprendre le rôle de notre « assiette » et de nos habitudes de vie sur la santé.</p>
+                                            <div class="qualification-item">
+                                                <div class="qualification-icon"><i class="bi bi-check-circle-fill"></i></div>
+                                                <div class="qualification-text">Docteur en pharmacie</div>
+                                            </div>
+                                            <div class="qualification-item">
+                                                <div class="qualification-icon"><i class="bi bi-check-circle-fill"></i></div>
+                                                <div class="qualification-text">Diplômée de l'Institut SIIn</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Onglet Approche -->
+                                        <div class="tab-pane fade" id="approche" role="tabpanel" aria-labelledby="approche-tab">
+                                            <h3 class="mb-3"><i class="bi bi-heart-pulse me-2"></i>Ma Vision de la Nutrition</h3>
+                                            <p class="bio-text">Dès lors, j'ai placé la nutrition au cœur de mon exercice officinal. Cette formation a donné un sens à mon métier et m'a permis parallèlement de proposer des consultations personnalisées en nutrition, micronutrition et modes de vie.</p>
+                                            <p class="bio-text">Ce travail est passionnant et permet d'accompagner les personnes désireuses de préserver leur capital santé ou bien de le rétablir. Mon rôle n'est pas de traiter les maladies mais de comprendre les causes des symptômes (stress, manque de sommeil, déficits micronutritionnels, inflammation, troubles des rythmes biologiques…) afin d'améliorer l'état de santé.</p>
+                                            <p class="bio-text">Le domaine de la nutrition est en constante évolution, je me forme donc en continu afin d'approfondir et de me perfectionner pour un conseil personnalisé et actualisé.</p>
+                                        </div>
+                                        
+                                        <!-- Onglet Personnel -->
+                                        <div class="tab-pane fade" id="personnel" role="tabpanel" aria-labelledby="personnel-tab">
+                                            <h3 class="mb-3"><i class="bi bi-house-heart me-2"></i>Vie Personnelle</h3>
+                                            <p class="bio-text">Mariée et mère de 3 enfants, je mets en pratique au quotidien les principes d'une cuisine santé et en observe les effets bénéfiques.</p>
+                                            <div class="personal-interests">
+                                                <span class="interest-tag">Cuisine saine</span>
+                                                <span class="interest-tag">Randonnée</span>
+                                                <span class="interest-tag">Jardinage</span>
+                                                <span class="interest-tag">Lecture</span>
+                                            </div>
+                                            <blockquote class="bio-quote">
+                                                <i class="bi bi-quote"></i>
+                                                <p>La santé commence dans l'assiette, mais s'épanouit dans un mode de vie équilibré.</p>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Boutons d'action -->
+                                    <div class="bio-actions mt-4">
+                                        <a href="https://www.mynutriconsult.com/fr/annuaire-des-praticiens/details-praticien/marie-pierre-doat/" class="btn btn-primary btn-lg action-btn" aria-label="Prendre rendez-vous">
+                                            <i class="bi bi-calendar-check me-2"></i>Prendre RDV
+                                        </a>
+                                        <a href="apropos.html" class="btn btn-outline-primary btn-lg action-btn" aria-label="En savoir plus">
+                                            <i class="bi bi-arrow-right me-2"></i>En savoir plus
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            
+            <!-- Section Mon Parcours -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-12">
+                            <div class="pe-lg-5">
+                                <h3 class="mb-4">Mon Parcours</h3>
+                                <div class="custom-block bg-white shadow-lg p-5">
+                                    <h5 class="mb-3">Diplômes & Formation</h5>
+                                    <p>Diplôme d'Etat de Docteur en Pharmacie - Université d'Angers</p>
+    
+                                        <li class="mb-3">
+                                            Soutenance de thèse "Le risque médicamenteux chez les personnes âgées en milieu ambulatoire"
+                                        </li>
+                                    <p> Diplôme Intelligent Nutrition en Alimentation Saine et Durable et Micronutrition - Institut SIIN (Scientific Institute for Intelligent Nutrition)</p>
+                                        <li class="mb-3">
+                                            Expertise et spécialisation : <br> 
+                                            - Achat des aliments (lecture des étiquettes, additifs, choix des filières...)<br>
+                                            - Cuisine saine (méthodes de cuisson et conservation)<br>
+                                            - Prévention globale et intégrative<br>
+                                            - Optimisation de l'état de santé par l'assiette et si besoin par le recours à des compléments alimentaires validés scientifiquement
+                                        </li>
+                                    <p>Formation DMVP</p>
+    
+                                        <li class="mb-3">
+                                            - MICI (Maladies Inflamatoires Chroniques de l'Intestin0) <br>
+                                            - Cancer et Chimiothérapies orales <br>
+                                            - Micronutrition et nutrition à tous les âges de la vie <br>
+                                            - Diabète
+                                        </li>
+                                    <p>Formation en "nutrithérapie et cancers" (webinaires-littérature)</p>
+                                    <p>Formation d'Approfondissement et Perfectionnement de la pratique professionnelle en Alimentation Santé Durable et Micronutrition (depuis 2021) - Institut SIIN</p>
+
+                                        <li class="mb-3">
+                                            - Apports théoriques actualisés, cliniques et pratiques <br>
+                                            - Nombreuses disciplines médicales <br>
+                                        </li>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Colonne gauche avec l'image -->
+                        <div class="col-lg-5 col-12">
+                            <div class="position-relative">
+                                <img src="portrait.jpg" class= "portrait-image"alt="Marie-Pierre Doat - Coach en nutrition">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Mon Métier -->
+            <section class="section-padding section-bg">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-12 text-center mb-5">
+                            <h3>Mon Métier</h3>
+                            <p class="lead">Mon rôle est de vous accompagner vers une alimentation équilibrée et durable, adaptée à votre mode de vie.</p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="custom-block bg-white shadow-lg p-4 h-100">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-heart-pulse text-primary me-3" style="font-size: 2rem;"></i>
+                                    <h5 class="mb-0">Santé durable</h5>
+                                </div>
+                                <p>Accompagnement vers une meilleure santé à long terme, sans régime restrictif.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="custom-block bg-white shadow-lg p-4 h-100">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-person-check text-primary me-3" style="font-size: 2rem;"></i>
+                                    <h5 class="mb-0">Approche personnalisée</h5>
+                                </div>
+                                <p>Des solutions adaptées à vos besoins, votre mode de vie et vos objectifs spécifiques.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="custom-block bg-white shadow-lg p-4 h-100">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-graph-up-arrow text-primary me-3" style="font-size: 2rem;"></i>
+                                    <h5 class="mb-0">Résultats durables</h5>
+                                </div>
+                                <p>Un accompagnement qui vise des changements progressifs et pérennes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Ma Méthode -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <h3 class="text-center mb-5">Ma Méthode</h3>
+
+                            <div class="custom-block bg-white shadow-lg p-5">
+                                <div class="mb-5">
+                                    <h5 class="mb-4"><i class="bi bi-camera-video text-primary me-2"></i>Consultations en visio</h5>
+                                    <p>Les consultations à distance offrent flexibilité et confort :</p>
+                                    <ul class="list-unstyled ms-4">
+                                        <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Suivi régulier où que vous soyez</li>
+                                        <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Horaires flexibles</li>
+                                        <li><i class="bi bi-check2 text-success me-2"></i>Économie de temps de transport</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mb-5">
+                                    <h5 class="mb-4"><i class="bi bi-clipboard-pulse text-primary me-2"></i>Suivi personnalisé</h5>
+                                    <p>Un accompagnement adapté à vos besoins :</p>
+                                    <ul class="list-unstyled ms-4">
+                                        <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Analyse de vos habitudes actuelles</li>
+                                        <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Objectifs réalistes et progressifs</li>
+                                        <li><i class="bi bi-check2 text-success me-2"></i>Ajustements selon vos progrès</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h5 class="mb-4"><i class="bi bi-calendar-check text-primary me-2"></i>Déroulement type d'un suivi</h5>
+                                    <div class="timeline">
+                                        <div class="custom-block-timeline">
+                                            <h6 class="mb-2">1. Premier rendez-vous : bilan et objectifs</h6>
+                                            <p>Analyse complète de votre situation et définition d'objectifs réalistes</p>
+                                        </div>
+
+                                        <div class="custom-block-timeline">
+                                            <h6 class="mb-2">2. Élaboration d'un plan personnalisé</h6>
+                                            <p>Création d'un programme adapté à vos besoins et votre mode de vie</p>
+                                        </div>
+
+                                        <div class="custom-block-timeline">
+                                            <h6 class="mb-2">3. Suivi régulier et ajustements</h6>
+                                            <p>Accompagnement et adaptation continue selon vos progrès</p>
+                                        </div>
+
+                                        <div class="custom-block-timeline">
+                                            <h6 class="mb-2">4. Accompagnement vers l'autonomie</h6>
+                                            <p>Acquisition des bons réflexes pour une alimentation équilibrée sur le long terme</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Tarifs -->
+            <section class="section-padding section-bg">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-12 text-center mb-5">
+                            <h3>Mes Tarifs</h3>
+                            <p class="lead">Des formules adaptées à vos besoins pour un accompagnement sur mesure</p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <!-- Première consultation -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="custom-block bg-white shadow-lg p-5 h-100">
+                                <div class="text-center mb-4">
+                                    <div class="mb-3">
+                                        <i class="bi bi-clipboard2-pulse" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                                    </div>
+                                    <h4>Premier Rendez-vous</h4>
+                                    <div class="pricing-amount mt-4">
+                                        <span class="h2">60€</span>
+                                        <p class="text-muted mb-0">Durée : 1h</p>
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled mt-4">
+                                    <li class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                        Bilan complet de votre situation
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                        Analyse des habitudes alimentaires
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                        Définition des objectifs
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Suivi mensuel -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="custom-block bg-white shadow-lg p-5 h-100 position-relative">
+                                <div class="text-center mb-4">
+                                    <div class="mb-3">
+                                        <i class="bi bi-calendar2-check" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                                    </div>
+                                    <h4>Suivi Mensuel</h4>
+                                    <div class="pricing-amount mt-4">
+                                        <span class="h2">150€</span>
+                                        <p class="text-muted mb-0">par mois</p>
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled mt-4">
+                                    <li class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                        4 consultations par mois
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                        Plan alimentaire personnalisé
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                        Ajustements hebdomadaires
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                        Suivi par email illimité
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Pack 3 mois -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="custom-block bg-white shadow-lg p-5 h-100">
+                                <div class="text-center mb-4">
+                                    <div class="mb-3">
+                                        <i class="bi bi-star" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                                    </div>
+                                    <h4>Pack 3 Mois</h4>
+                                    <div class="pricing-amount mt-4">
+                                        <span class="h2">390€</span>
+                                        <p class="text-muted mb-0">soit 130€/mois</p>
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled mt-4">
+                                    <li class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                        Tous les avantages du suivi mensuel
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                        13% de réduction
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                        Engagement sur la durée
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                        Contenus exclusifs
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Note sur les tarifs -->
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-lg-8 col-12">
+                            <div class="custom-block bg-white shadow-lg p-4 text-center">
+                                <p class="mb-0"><i class="bi bi-info-circle me-2"></i>Les consultations se font exclusivement en visioconférence. Moyens de paiement acceptés : virement bancaire, PayPal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Call to Action -->
+            <section class="section-padding section-bg">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-12 text-center">
+                            <h3>Prêt à commencer votre transformation ?</h3>
+                            <p class="lead mb-4">Prenez rendez-vous pour une première consultation et découvrez comment je peux vous accompagner</p>
+                            <a href="https://www.mynutriconsult.com/fr/annuaire-des-praticiens/details-praticien/marie-pierre-doat/" class="btn custom-btn">
+                                <i class="bi bi-calendar-check me-2"></i>Prendre RDV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </main>
+		
+        <footer class="site-footer section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-12 mb-4 pb-2">
+                        <img src="icon.png" alt="Icon" style="width: 35px; height: auto; margin-right: 20px;">                        
+                        <div>
+                            <span>Marie-Pierre DOAT</span>
+                            <div class="subtitle-doctor">Docteur en pharmacie</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <h6 class="site-footer-title mb-3">Resources</h6>
+
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="index.html" class="site-footer-link">Accueil</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="apropos.html" class="site-footer-link">À propos</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Contact</a>
+                            </li>
+
+                            <!-- <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Contact</a>
+                            </li> -->
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                        <h6 class="site-footer-title mb-3">Information</h6>
+
+                        <p class="text-white d-flex mb-1">
+                            <a href="06 20 59 38 05" class="site-footer-link">
+                                06 20 59 38 05
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <a href="mpronutri@orange.fr" class="site-footer-link">
+                                mpronutri@orange.fr
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
+                        <p class="copyright-text mt-lg-5 mt-4">Copyright © 2048 Topic Listing Center. All rights reserved.
+                        <br><br>Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
