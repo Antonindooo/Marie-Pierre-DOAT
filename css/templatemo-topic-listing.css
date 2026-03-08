@@ -10,44 +10,45 @@ https://templatemo.com/tm-590-topic-listing
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
-  --primary-color:                #8FBC8F;
-  --secondary-color:              #8FBC8F;
-  --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #8FBC8F;
-  --custom-btn-bg-hover-color:    #BCA17C;
-  --dark-color:                   #000000;
-  --p-color:                      #717275;
-  --border-color:                 #7fffd4;
-  --link-hover-color:             #BCA17C;
+  --white-color: #ffffff;
+  --primary-color: #8FBC8F;
+  --secondary-color: #8FBC8F;
+  --section-bg-color: #f0f8ff;
+  --custom-btn-bg-color: #8FBC8F;
+  --custom-btn-bg-hover-color: #BCA17C;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #7fffd4;
+  --link-hover-color: #BCA17C;
 
-  --body-font-family:             'Open Sans', sans-serif;
-  --title-font-family:            'Montserrat', sans-serif;
+  --body-font-family: 'Open Sans', sans-serif;
+  --title-font-family: 'Montserrat', sans-serif;
 
-  --h1-font-size:                 58px;
-  --h2-font-size:                 46px;
-  --h3-font-size:                 32px;
-  --h4-font-size:                 28px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  20px;
-  --menu-font-size:               14px;
-  --btn-font-size:                18px;
-  --copyright-font-size:          16px;
+  --h1-font-size: 58px;
+  --h2-font-size: 46px;
+  --h3-font-size: 32px;
+  --h4-font-size: 28px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 20px;
+  --menu-font-size: 14px;
+  --btn-font-size: 18px;
+  --copyright-font-size: 16px;
 
-  --border-radius-large:          100px;
-  --border-radius-medium:         20px;
-  --border-radius-small:          10px;
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
 
-  --font-weight-normal:           400;
-  --font-weight-medium:           500;
-  --font-weight-semibold:         600;
-  --font-weight-bold:             700;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 }
 
 .main-scaled-content {
   flex-grow: 1;
-  zoom: 0.70; /* réduit la taille *et* la hauteur réelle */
+  zoom: 0.70;
+  /* réduit la taille *et* la hauteur réelle */
   margin: 0 auto;
 }
 
@@ -72,7 +73,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--title-font-family); 
+  font-family: var(--title-font-family);
   font-weight: var(--font-weight-semibold);
 }
 
@@ -115,7 +116,7 @@ ul li {
   font-weight: var(--font-weight-normal);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -159,15 +160,20 @@ strong {
   height: 100%;
   opacity: 0.85;
 }
+
 .button-container {
-  display: flex; /* Utilise flexbox pour un alignement facile */
-  justify-content: center; /* Centre horizontalement */
-  align-items: center; /* Centre verticalement */
-  height: 100; /* Ajustez la hauteur selon vos besoins */
+  display: flex;
+  /* Utilise flexbox pour un alignement facile */
+  justify-content: center;
+  /* Centre horizontalement */
+  align-items: center;
+  /* Centre verticalement */
+  height: 100;
+  /* Ajustez la hauteur selon vos besoins */
   text-align: center;
 }
 
-.section-overlay + .container {
+.section-overlay+.container {
   position: relative;
 }
 
@@ -200,9 +206,9 @@ strong {
   margin-right: 20px;
 }
 
-.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active,
-.nav-tabs .nav-link:focus, 
+.nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
   border-bottom-color: var(--primary-color);
   color: var(--primary-color);
@@ -213,9 +219,9 @@ strong {
   CUSTOM ICON COLOR               
 -----------------------------------------*/
 .navbar-icon {
-    width: 30px;
-    height: auto;
-    margin-right: 10px;
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
 }
 
 
@@ -264,7 +270,8 @@ strong {
 .site-header {
   background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   margin-top: 0;
-  padding-top: 120px; /* Espace pour la navbar fixe */
+  padding-top: 120px;
+  /* Espace pour la navbar fixe */
   padding-bottom: 80px;
   background-size: cover;
   background-position: center;
@@ -324,15 +331,20 @@ strong {
 }
 
 .navbar-brand span {
-  font-size: 26px;  /* Taille augmentée */
-  font-weight: 600; /* Semi-bold pour plus d'impact */
-  display: block;   /* Pour s'assurer que le nom et le titre sont sur des lignes séparées */
-  line-height: 1.2; /* Ajustement de l'interligne */
+  font-size: 26px;
+  /* Taille augmentée */
+  font-weight: 600;
+  /* Semi-bold pour plus d'impact */
+  display: block;
+  /* Pour s'assurer que le nom et le titre sont sur des lignes séparées */
+  line-height: 1.2;
+  /* Ajustement de l'interligne */
 }
 
 /* Ajustement de la taille du sous-titre pour maintenir la proportion */
 .subtitle-doctor {
-  font-size: 16px;  /* Légèrement réduit pour contraster avec le nom plus grand */
+  font-size: 16px;
+  /* Légèrement réduit pour contraster avec le nom plus grand */
   display: block;
   line-height: 1;
   margin-top: 2px;
@@ -354,7 +366,7 @@ strong {
 .navbar-nav .nav-link {
   display: inline-block;
   color: #000000;
-  font-family: var(--title-font-family); 
+  font-family: var(--title-font-family);
   font-size: var(--menu-font-size);
   font-weight: var(--font-weight-medium);
   text-transform: uppercase;
@@ -364,14 +376,14 @@ strong {
   padding-bottom: 15px;
 }
 
-.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   color: var(--primary-color);
 }
 
 .navbar .dropdown-menu {
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
   border: 0;
   display: inherit;
   opacity: 0;
@@ -397,7 +409,7 @@ strong {
 .navbar .dropdown-item {
   display: inline-block;
   color: var(--p-bg-color);
-  font-family: var(--title-font-family); 
+  font-family: var(--title-font-family);
   font-size: var(--menu-font-size);
   font-weight: var(--font-weight-medium);
   text-transform: uppercase;
@@ -405,9 +417,9 @@ strong {
   position: relative;
 }
 
-.navbar .dropdown-item.active, 
+.navbar .dropdown-item.active,
 .navbar .dropdown-item:active,
-.navbar .dropdown-item:focus, 
+.navbar .dropdown-item:focus,
 .navbar .dropdown-item:hover {
   background: transparent;
   color: var(--primary-color);
@@ -590,7 +602,7 @@ strong {
   transform: translateY(-3px);
 }
 
-.custom-block > a {
+.custom-block>a {
   width: 100%;
 }
 
@@ -618,7 +630,7 @@ strong {
   padding: 0;
 }
 
-.custom-block-overlay > a {
+.custom-block-overlay>a {
   height: 100%;
 }
 
@@ -758,7 +770,8 @@ blockquote {
   border-radius: var(--border-radius-small);
 }
 
-.active>.page-link, .page-link.active {
+.active>.page-link,
+.page-link.active {
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
 }
@@ -987,7 +1000,7 @@ blockquote {
 }
 
 .site-footer-title {
-  color: var(--primary-color); 
+  color: var(--primary-color);
 }
 
 .site-footer .dropdown-menu {
@@ -1085,11 +1098,12 @@ blockquote {
 -----------------------------------------*/
 /* Ajustements pour tablettes et mobiles */
 @media (max-width: 991px) {
+
   /* Correction de la navbar sur mobile */
   .navbar {
     padding: 10px 15px;
   }
-  
+
   .navbar-collapse {
     background-color: white;
     padding: 15px;
@@ -1097,36 +1111,36 @@ blockquote {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
   }
-  
+
   /* Ajustement de l'en-tête */
   .site-header {
     min-height: 40vh;
     padding-top: 100px;
     text-align: center;
   }
-  
+
   .site-header h2 {
     font-size: 2rem;
     padding: 0 15px;
   }
-  
+
   /* Correction des sections */
   .section-padding {
     padding: 50px 0;
   }
-  
+
   /* Correction des colonnes */
   .col-lg-7 {
     padding: 0 15px;
   }
-  
+
   /* Correction du positionnement du texte */
   .col-lg-7 div {
     position: relative !important;
     left: 0 !important;
     padding: 15px;
   }
-  
+
   /* Ajustement des blocs personnalisés */
   .custom-block {
     margin-bottom: 20px;
@@ -1155,7 +1169,7 @@ blockquote {
   h6 {
     font-size: 18px;
   }
-  
+
   .navbar-nav .dropdown-menu {
     position: relative;
     left: 10px;
@@ -1192,7 +1206,7 @@ blockquote {
     width: auto;
   }
 
-  .custom-block-topics-listing > .d-flex,
+  .custom-block-topics-listing>.d-flex,
   .custom-block-topics-listing-info,
   .custom-block-topics-listing a {
     flex-direction: column;
@@ -1214,46 +1228,48 @@ blockquote {
 
 /* Ajustements spécifiques pour mobiles */
 @media (max-width: 767px) {
+
   /* Ajustement de l'en-tête pour très petits écrans */
   .site-header {
     min-height: 30vh;
   }
-  
+
   .site-header h2 {
     font-size: 1.8rem;
   }
-  
+
   /* Centrage de l'image de profil */
   .col-lg-5 .position-relative {
     text-align: center;
     margin-bottom: 30px;
   }
-  
+
   .col-lg-5 .position-relative img {
     max-width: 80%;
     margin: 0 auto;
   }
-  
+
   /* Ajustement des boutons */
   .btn.custom-btn {
     width: 100%;
     margin-bottom: 10px;
   }
-  
+
   /* Correction des marges dans les services */
   .custom-block .d-flex {
     flex-direction: column;
   }
-  
+
   .custom-block .d-flex i {
     margin-bottom: 10px;
   }
-  
+
   /* Ajustement du footer */
-  .site-footer-links, .text-white.d-flex {
+  .site-footer-links,
+  .text-white.d-flex {
     margin-bottom: 15px;
   }
-  
+
   /* Correction des tarifs sur mobile */
   .pricing-amount .h2 {
     font-size: 1.8rem;
@@ -1287,11 +1303,11 @@ blockquote {
   .navbar-brand span {
     font-size: 0.9rem;
   }
-  
+
   .subtitle-doctor {
     font-size: 0.7rem;
   }
-  
+
   /* Gestion des témoignages sur petit écran */
   .custom-block.h-100 {
     height: auto !important;
@@ -1304,6 +1320,7 @@ blockquote {
     transition: none !important;
   }
 }
+
 /*afin de modifier la taille de l'image*/
 .portrait-image {
   max-width: 500px;
@@ -1312,35 +1329,36 @@ blockquote {
 }
 
 .timeline {
-    position: relative;
-    padding-left: 30px;
+  position: relative;
+  padding-left: 30px;
 }
 
 .custom-block-timeline {
-    position: relative;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    border-left: 2px solid #dee2e6;
+  position: relative;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  border-left: 2px solid #dee2e6;
 }
 
 .custom-block-timeline:before {
-    content: "";
-    position: absolute;
-    left: -11px;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #fff;
-    border: 2px solid var(--primary-color);
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--primary-color);
 }
 
 .custom-block-timeline:last-child {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .form-control {
-  border-radius: 4px !important;  /* Bordures moins arrondies */
+  border-radius: 4px !important;
+  /* Bordures moins arrondies */
 }
 
 .form-floating textarea.form-control {
@@ -1367,16 +1385,19 @@ blockquote {
 /* Améliorer la visibilité de la navbar sur mobile */
 @media (max-width: 991px) {
   .navbar-toggler {
-    background-color: #8FBC8F; /* Couleur primaire pour meilleure visibilité */
+    background-color: #8FBC8F;
+    /* Couleur primaire pour meilleure visibilité */
   }
-  
+
   .navbar-toggler-icon {
-    background-color: transparent !important; /* Correction pour l'icône du toggler */
+    background-color: transparent !important;
+    /* Correction pour l'icône du toggler */
   }
-  
+
   .navbar-toggler-icon:before,
   .navbar-toggler-icon:after {
-    background-color: white !important; /* Lignes blanches pour le toggler */
+    background-color: white !important;
+    /* Lignes blanches pour le toggler */
   }
 
   /* S'assurer que le menu déroulant est visible et bien placé */
@@ -1391,32 +1412,32 @@ blockquote {
     z-index: 1000;
     margin-top: 0;
   }
-  
+
   /* Correction des éléments de navigation */
   .navbar-nav {
     margin: 0 !important;
     width: 100%;
     text-align: center;
   }
-  
+
   .navbar-nav .nav-link {
     padding: 10px 0;
     display: block;
     width: 100%;
     text-align: center;
   }
-  
+
   /* S'assurer que le bouton "Prendre RDV" est visible sur mobile */
   .d-lg-none.ms-auto.me-4 {
     display: block !important;
   }
-  
+
   /* Correction du logo et du nom */
   .navbar-brand {
     max-width: 70%;
     white-space: normal;
   }
-  
+
   /* Correction spécifique pour le menu hamburger */
   .navbar-toggler {
     margin-left: auto;
@@ -1429,11 +1450,11 @@ blockquote {
   .navbar-brand {
     max-width: 60%;
   }
-  
+
   .navbar-brand span {
     font-size: 0.8rem;
   }
-  
+
   .subtitle-doctor {
     font-size: 0.6rem;
   }
